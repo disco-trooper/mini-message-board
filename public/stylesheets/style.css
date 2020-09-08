@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 3px solid black;
+  overflow-wrap: break-word;
+}
+
+.messageText {
+  font-size: 18px;
+}
+
+.messageDate {
+  float: right;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+button:focus {
+  outline: none;
+  transform: scale(0.96);
+}
+
+.newMessageDiv {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newMessageDiv > form > * {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  border: 2px solid black;
+  margin-bottom: 10px;
+}

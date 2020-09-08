@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="newMessageDiv">
+      <h2>New Message</h2>
+      <form acion="/new" method="post">
+        <input
+          type="text"
+          name="messageAuthor"
+          id="author"
+          placeholder="Author"
+          style="width: 100px;"
+          required
+        />
+        <textarea
+          type="text"
+          name="messageText"
+          id="text"
+          placeholder="Text"
+          rows="10"
+          cols="32"
+          required
+        ></textarea>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
